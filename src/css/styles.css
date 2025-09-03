@@ -143,16 +143,17 @@ body{
   color: #fff;
   background-color: transparent;
   border: none;
-  display: inline-block;
-  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
   transition: color 0.2s ease;
 }
 
-.learn-more-btn:hover {
-  color: #764191;
+.learn-more-btn:hover img {
+ transform: translateX(2px);
 }
 
 .load-more-wrapper {
@@ -188,7 +189,11 @@ body{
 .load-more-btn:disabled{
   opacity:.5; cursor:not-allowed;
 }
-
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 
 @media (max-width: 768px){
 
@@ -246,3 +251,4 @@ body{
     height: 177px;
   }
 }
+

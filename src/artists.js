@@ -35,7 +35,8 @@ function renderArtists(artists) {
               ? artist.strBiographyEN.slice(0, 120) + '...'
               : 'No description available'}
           </p>
-          <button class="learn-more-btn" data-id="${artist._id}">Learn More</button>
+          <button class="learn-more-btn" data-id="${artist._id}">Learn More
+          <img src="../img/arrow.svg" alt="arrow" class="icon" />
         </div>
       </li>
     `
@@ -64,4 +65,5 @@ loadMoreBtn.addEventListener('click', async () => {
 
   if (!data.hasMore) loadMoreBtn.style.display = 'none';
 });
+
 
